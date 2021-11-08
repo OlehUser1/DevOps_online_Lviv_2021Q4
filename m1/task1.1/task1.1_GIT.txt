@@ -1,0 +1,24 @@
+olehb@DESKTOP-FDNERRH MINGW64 /d/DevOps_online_Lviv_2021Q4/m1/task1.1 (master)
+$ git reflog
+2fdb495 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{0}: merge develop: Fast-forward
+dc68b07 HEAD@{1}: checkout: moving from develop to master
+2fdb495 (HEAD -> master, origin/master, origin/develop, develop) HEAD@{2}: merge styles: Merge made by the 'recursive' strategy.
+8e88bd1 (origin/images, images) HEAD@{3}: merge images: Fast-forward
+dc92699 HEAD@{4}: checkout: moving from images to develop
+8e88bd1 (origin/images, images) HEAD@{5}: commit: Update images.html
+d6ce1d3 HEAD@{6}: checkout: moving from styles to images
+099c136 (origin/styles, styles) HEAD@{7}: commit: Update styles
+dc92699 HEAD@{8}: checkout: moving from images to styles
+d6ce1d3 HEAD@{9}: checkout: moving from styles to images
+dc92699 HEAD@{10}: checkout: moving from images to styles
+d6ce1d3 HEAD@{11}: checkout: moving from styles to images
+dc92699 HEAD@{12}: checkout: moving from images to styles
+d6ce1d3 HEAD@{13}: checkout: moving from styles to images
+dc92699 HEAD@{14}: checkout: moving from develop to styles
+dc92699 HEAD@{15}: checkout: moving from images to develop
+d6ce1d3 HEAD@{16}: commit: Update index.html
+a653ff8 HEAD@{17}: commit: Add folder images with images
+dc92699 HEAD@{18}: checkout: moving from develop to images
+dc92699 HEAD@{19}: commit: Add index.html
+dc68b07 HEAD@{20}: checkout: moving from master to develop
+dc68b07 HEAD@{21}: commit (initial): Add readme.txt
