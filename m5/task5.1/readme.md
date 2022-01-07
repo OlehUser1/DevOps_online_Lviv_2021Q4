@@ -117,3 +117,29 @@ host character sequence
 
 ![image](https://user-images.githubusercontent.com/46942305/148608053-2de0f8cd-3fa6-49a8-9c02-4aecfcc21690.png)
 
+11) List all objects in /etc that contain the ss character sequence. 
+![image](https://user-images.githubusercontent.com/46942305/148608613-f4de9ed5-e14e-4e1d-a143-45470f9841de.png)
+
+12) Organize a screen-by-screen print of the contents of the /etc directory. Hint:
+You must use stream redirection operations.
+
+![image](https://user-images.githubusercontent.com/46942305/148610067-f4fc0573-0807-4bbf-b5da-ea78c7ea5b7b.png)
+
+13) What are the types of devices and how to determine the type of device? Give
+examples.
+
+Character Device, Block Device, Pipe Device, Socket Device
+
+14) How to determine the type of file in the system
+
+command file
+
+what types of files are there?
+
+simple files for storing information, special files for devices and tunnels, directories
+
+15) List the first 5 directory files that were recently accessed in the /etc directory.
+
+![image](https://user-images.githubusercontent.com/46942305/148611113-b3376cba-1429-463a-b491-a1d999f35102.png)
+
+
