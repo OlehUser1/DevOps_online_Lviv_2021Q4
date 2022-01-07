@@ -71,7 +71,7 @@ of listing directories using different keys.
 
 Explain the information displayed on the terminal using the -l and -a switches.
 
-access rights/number of links per file/owner/group/size/created time/name
+-l long listing format, -a do not ignore entries starting with
 
 5) Perform the following sequence of operations:
 - create a subdirectory in the home directory;
