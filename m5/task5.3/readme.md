@@ -1,4 +1,4 @@
-PART!
+PART1
 1. How many states could has a process in Linux?
 
 Running, Sleeping, Uninterruptable sleep, Stopped, Zombie
@@ -97,5 +97,4 @@ Nohup - command that ignores the HUP signal
  
 ![image](https://user-images.githubusercontent.com/46942305/148652700-6e2c3c6c-f2bb-42d3-9cbd-26410bbfd669.png)
 
-PART2
  
