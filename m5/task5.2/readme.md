@@ -48,7 +48,7 @@ usermod -l newusername oldusername
 
 Skel_dir is a special directory that contain all necessary files and directories which will be copied to new user's home directory.
 
-.bash_logout .bashrc .bash_profile
+.bash_logout .bashrc .profile
 
 8) How to remove a user from the system (including his mailbox)?
 
@@ -69,3 +69,36 @@ passwd -d
 access rights/number of links per file/owner/group/size/created time/name
 
 12) What access rights exist and for whom (i. e., describe the main roles)? Briefly describe the acronym for access rights.
+
+-r read(4), -w write(2), -x execute(1) 
+
+owner, group, other
+
+13) What is the sequence of defining the relationship between the file and the user?
+
+all information about the file can be found with the command ls -l
+
+14) What commands are used to change the owner of a file (directory), as well
+as the mode of access to the file? Give examples, demonstrate on the terminal.
+
+![image](https://user-images.githubusercontent.com/46942305/148618943-52ba391b-f530-4aed-b5db-9a7cee4bba28.png)
+
+15) What is an example of octal representation of access rights? Describe the
+umask command.
+
+777 - full access for everyone (4 read, 2 write, 1 execute: 4+2+1=7)
+
+umask command sets the mask of rights for new files and directories
+
+![image](https://user-images.githubusercontent.com/46942305/148620546-30e442c2-5592-4f62-8230-3e539d7410e3.png)
+
+16) Give definitions of sticky bits and mechanism of identifier substitution. Give
+an example of files and directories with these attributes.
+
+Sticky bit is special attribute that affects user access rights.(only the file owner, folder owner, or root can rename or delete the file)
+
+![image](https://user-images.githubusercontent.com/46942305/148621663-348a83a5-6af4-4f3c-a946-6d2a3e233fcd.png)
+
+17) What file attributes should be present in the command script?
+
+-x execute 
