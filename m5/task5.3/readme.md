@@ -1,3 +1,4 @@
+PART!
 1. How many states could has a process in Linux?
 
 Running, Sleeping, Uninterruptable sleep, Stopped, Zombie
@@ -80,3 +81,21 @@ Once given top command, press r. Give PID value of the process you want to chang
 Nice value of -20 means highest priority value and +19 means lowest priority value. 0 is by default value.
   
 16. Examine the kill command. How to send with the kill command process control signal? Give an example of commonly used signals
+
+kill [options] $PID
+ 
+The signal SIGTERM (15) is used to ask a process to stop.
+The signal SIGKILL (9) is used to force a process to stop.
+The SIGHUP (1) signal is used to hang up a process.
+ 
+17. Commands jobs, fg, bg, nohup. What are they for? Use the sleep, yes command to
+demonstrate the process control mechanism with fg, bg.
+ 
+Command jobs used to show background processes.
+fg/bg - used to make form background processes foreground etc.
+Nohup - command that ignores the HUP signal
+ 
+![image](https://user-images.githubusercontent.com/46942305/148652700-6e2c3c6c-f2bb-42d3-9cbd-26410bbfd669.png)
+
+PART2
+ 
