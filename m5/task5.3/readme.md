@@ -97,4 +97,41 @@ Nohup - command that ignores the HUP signal
  
 ![image](https://user-images.githubusercontent.com/46942305/148652700-6e2c3c6c-f2bb-42d3-9cbd-26410bbfd669.png)
 
+PART2
+
+1. Check the implementability of the most frequently used OPENSSH commands in the MS
+Windows operating system. (Description of the expected result of the commands +
+screenshots: command – result should be presented)
+
+ssh - connect to the VM
+![image](https://user-images.githubusercontent.com/46942305/148658060-3f0e66cd-1324-45b2-95bd-fcfd28d722bd.png)
+
+scp.exe - copy file 
+![image](https://user-images.githubusercontent.com/46942305/148658403-d34a53d5-db33-447e-9e1b-45a8e06c1c10.png)
+
+2. Implement basic SSH settings to increase the security of the client-server connection
+
+Change default port
+![image](https://user-images.githubusercontent.com/46942305/148659238-36f52272-384f-44c0-ade8-00cdf524449a.png)
+
+access without password is prohibited 
+![image](https://user-images.githubusercontent.com/46942305/148659245-1121bdc2-76dc-4709-9cfe-9124aecce188.png)
+
+3. List the options for choosing keys for encryption in SSH. Implement 3 of them.
  
+RSA, DSA, ECDSA, and EdDSA
+ 
+rsa_key
+![image](https://user-images.githubusercontent.com/46942305/148662151-54c14966-001c-4e2e-af8b-fd5a45fb6db4.png)
+
+EdDSA
+![image](https://user-images.githubusercontent.com/46942305/148662723-576645a5-cc34-4589-a337-bf2ae5fdaab4.png)
+
+ECDSA
+![image](https://user-images.githubusercontent.com/46942305/148662881-886c3e56-14f7-4bc1-8c4e-1c312fd77349.png)
+ 
+4. Implement port forwarding for the SSH client from the host machine to the guest Linux
+virtual machine behind NAT.
+ 
+![image](https://user-images.githubusercontent.com/46942305/148663334-cad70d76-765d-42c4-9c5b-331315ce2091.png)
+
