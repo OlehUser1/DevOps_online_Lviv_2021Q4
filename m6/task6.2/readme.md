@@ -22,3 +22,11 @@ ISC-DHSPSERVER
 ![image](https://user-images.githubusercontent.com/46942305/148979595-d97954f5-106d-4707-bcf7-8e771c541672.png)
 
 4. Using existed network for three VMs (from p.1) install and configure DNS server on VM1. 
+
+![image](https://user-images.githubusercontent.com/46942305/149021761-76189af9-3303-4d5e-bfa6-e62204bc1dfc.png)
+
+![image](https://user-images.githubusercontent.com/46942305/149021820-3f28c914-b46e-425d-978a-de5c03a3cbe7.png)
+
+5. Check VM2 and VM3 for gaining access to DNS server (naming services).
+
+![image](https://user-images.githubusercontent.com/46942305/149022242-2a77ffac-9e32-4076-a08a-134d73fe880c.png)
