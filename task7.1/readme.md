@@ -22,3 +22,16 @@ B. Using Apache log example create a script to answer the following questions:
 ![image](https://user-images.githubusercontent.com/46942305/149379868-18c1f428-1b4b-48a0-abdf-6221ec493f67.png)
 
 ![image](https://user-images.githubusercontent.com/46942305/149379959-6832e178-62ae-4d80-af51-59ea15c6d893.png)
+
+C. Create a data backup script that takes the following data as parameters:
+1. Path to the syncing directory.
+2. The path to the directory where the copies of the files will be stored.
+In case of adding new or deleting old files, the script must add a corresponding entry to the log file
+indicating the time, type of operation and file name. [The command to run the script must be added to
+crontab with a run frequency of one minute]
+
+![image](https://user-images.githubusercontent.com/46942305/149588942-0142479a-b36d-458f-8954-4c51749417d2.png)
+
+![image](https://user-images.githubusercontent.com/46942305/149589088-9a6fec1e-852e-4cb8-b2e6-25d7dd4ed204.png)
+
+![image](https://user-images.githubusercontent.com/46942305/149589509-2f15c1b5-ead1-4951-a6cd-8ac1488483eb.png)
