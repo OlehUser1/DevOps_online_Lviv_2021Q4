@@ -1,0 +1,13 @@
+---
+- name: Copy webpage
+  hosts: all
+
+  vars:
+    source_file: /var/jenkins_home/workspace/test/web/
+    destin_file: /var/lib/docker/volumes/nginx_html/_data
+    
+  tasks:
+
+  - name: Copy files to WebServer
+    copy: src={{ source_file }} dest={{ destin_file }} mode=0666
+    

@@ -1,0 +1,60 @@
+---
+- name: Configuration WebServer
+  hosts: all
+  
+  tasks:
+
+  - name: Update apt packages
+    apt: 
+        update_cache: yes
+     
+  - name: Install dependencies
+    apt:
+        name:
+            - ca-certificates
+            - curl
+            - gnupg
+            - lsb-release
+        state: latest 
+        update_cache: yes
+    
+  - name: Add Docker’s official GPG key
+    apt_key:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        state: present
+
+  - name: Set up the repository
+    apt_repository:
+        repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable
+        state: present
+        update_cache: yes
+
+  - name: Update apt packages
+    apt:
+        update_cache: yes
+
+  - name: Install Docker
+    apt:
+        name: docker-ce
+        state: present
+        update_cache: yes
+    notify: Start docker on boot
+  
+  - name: Check if container is running
+    wait_for: 
+        port: 80
+        timeout: 1
+    register: port_check
+    ignore_errors: yes  
+
+  - name: Run Docker container
+    shell: "docker run --name WebServer -p 80:80 -v nginx_html:/usr/share/nginx/html -d nginx"
+    when: port_check.failed == true
+
+  handlers:
+  - name: Start docker on boot
+    systemd:
+        name: docker
+        state: started
+        enabled: yes
+

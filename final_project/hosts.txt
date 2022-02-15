@@ -1,0 +1,2 @@
+[WEB]
+WebServer ansible_host=
